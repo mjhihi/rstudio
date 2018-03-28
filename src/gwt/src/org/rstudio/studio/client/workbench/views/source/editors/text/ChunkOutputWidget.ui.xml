@@ -100,7 +100,7 @@
    {
       border: 1px solid #e5e5e5;
       padding-top: 10px;
-      overflow: hidden;
+      overflow: auto;
    }
 
    .fullsize .frame

@@ -327,6 +327,9 @@ public class ChunkOutputWidget extends Composite
       {
          int contentHeight = root_.getElement().getOffsetHeight() + 19;
          height = Math.max(ChunkOutputUi.MIN_CHUNK_HEIGHT, contentHeight);
+         
+         // clamp the widget height to something sensible
+         height = Math.min(height, 600);
 
          // if we have renders pending, don't shrink until they're loaded 
          if (pendingRenders_ > 0 && height < renderedHeight_)
